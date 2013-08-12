@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
+  <metadata>
+    <id>IFluentInterface</id>
+    <version>1.1</version>
+    <title>IFluentInterface</title>
+    <authors>Daniel Cazzulino,  kzu,  Clarius</authors>
+    <owners>Daniel Cazzulino,  kzu,  Clarius</owners>
+    <licenseUrl>http://netfx.codeplex.com/license</licenseUrl>
+    <projectUrl>http://netfx.codeplex.com/</projectUrl>
+    <iconUrl>http://download.codeplex.com/Project/Download/FileDownload.aspx?ProjectName=netfx&amp;DownloadId=199201</iconUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>The core interface to implement fluent APIs that hide the default System.Object members, as explained in http://bit.ly/ifluentinterface</description>
+    <releaseNotes>v1.1
+* Changed target namespace to match the project where the source is included.
+* Changed license to Apache 2
+* Changed target path to be the root of the target project, which is more logical.</releaseNotes>
+    <copyright />
+    <language>en-US</language>
+    <tags>netfx fluent API</tags>
+  </metadata>
+</package>

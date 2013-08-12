@@ -104,6 +104,10 @@
     <ErrorReport>prompt</ErrorReport>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Common, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Common\bin\Debug\Common.dll</HintPath>
+    </Reference>
     <Reference Include="DevExpress.Data.v13.1">
       <SpecificVersion>False</SpecificVersion>
       <Private>False</Private>
@@ -230,13 +234,18 @@
       <DependentUpon>ClearFieldsController.cs</DependentUpon>
     </Compile>
     <Compile Include="BusinessObjects\Contact.cs" />
+    <Compile Include="Controllers\FindByFluentInterfaceController.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controllers\FindByFluentInterfaceController.Designer.cs">
+      <DependentUpon>FindByFluentInterfaceController.cs</DependentUpon>
+    </Compile>
     <Compile Include="Controllers\FindBySubjectController.cs">
       <SubType>Component</SubType>
     </Compile>
     <Compile Include="Controllers\FindBySubjectController.Designer.cs">
       <DependentUpon>FindBySubjectController.cs</DependentUpon>
     </Compile>
-    <Compile Include="IFluentInterface.cs" />
     <Compile Include="MainDemoModule.cs">
       <SubType>Component</SubType>
     </Compile>
@@ -262,7 +271,14 @@
     <Compile Include="DatabaseUpdate\Updater.cs">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="Queries\Base\QueryExtensions.cs" />
+    <Compile Include="Queries\ContactQueries.cs" />
     <Compile Include="Queries\Queries.cs" />
+    <Compile Include="Queries\Base\Queries.cs" />
+    <EmbeddedResource Include="Controllers\FindByFluentInterfaceController.resx">
+      <DependentUpon>FindByFluentInterfaceController.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
     <EmbeddedResource Include="Controllers\FindBySubjectController.resx">
       <DependentUpon>FindBySubjectController.cs</DependentUpon>
       <SubType>Designer</SubType>
@@ -326,7 +342,7 @@
     </BootstrapperPackage>
   </ItemGroup>
   <ItemGroup>
-    <None Include="packages.config" />
+    <Folder Include="Tests\" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <PropertyGroup>

@@ -74,6 +74,7 @@ namespace MainDemo.Module.DatabaseUpdate {
               DemoTask task = ObjectSpace.CreateObject<DemoTask>();
               task.Subject = "Review reports";
               task.AssignedTo = contactJohn;
+              task.Contacts.Add(contactJohn);
               task.StartDate = DateTime.Parse("May 03, 2008");
               task.DueDate = DateTime.Parse("September 06, 2008");
               task.Status = DevExpress.Persistent.Base.General.TaskStatus.InProgress;
@@ -86,6 +87,7 @@ namespace MainDemo.Module.DatabaseUpdate {
               DemoTask task = ObjectSpace.CreateObject<DemoTask>();
               task.Subject = "Fix breakfast";
               task.AssignedTo = contactMary;
+              task.Contacts.Add(contactMary);
               task.StartDate = DateTime.Parse("May 03, 2008");
               task.DueDate = DateTime.Parse("May 04, 2008");
               task.Status = DevExpress.Persistent.Base.General.TaskStatus.Completed;
@@ -98,6 +100,7 @@ namespace MainDemo.Module.DatabaseUpdate {
               DemoTask task = ObjectSpace.CreateObject<DemoTask>();
               task.Subject = "Task1";
               task.AssignedTo = contactJohn;
+              task.Contacts.Add(contactJohn);
               task.StartDate = DateTime.Parse("June 03, 2008");
               task.DueDate = DateTime.Parse("June 06, 2008");
               task.Status = DevExpress.Persistent.Base.General.TaskStatus.Completed;
@@ -110,6 +113,7 @@ namespace MainDemo.Module.DatabaseUpdate {
               DemoTask task = ObjectSpace.CreateObject<DemoTask>();
               task.Subject = "Task2";
               task.AssignedTo = contactJohn;
+              task.Contacts.Add(contactJohn);
               task.StartDate = DateTime.Parse("July 03, 2008");
               task.DueDate = DateTime.Parse("July 06, 2008");
               task.Status = DevExpress.Persistent.Base.General.TaskStatus.Completed;

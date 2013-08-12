@@ -16,7 +16,7 @@
 */
 #endregion
 
-namespace MainDemo.Module
+namespace Common
 {
     using System;
     using System.ComponentModel;
