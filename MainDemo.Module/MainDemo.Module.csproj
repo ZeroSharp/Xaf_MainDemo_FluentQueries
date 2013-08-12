@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
   <PropertyGroup>
     <OwnerKey>{FE3BBBB6-72D5-11d2-9ACE-00C04F79A2A4}</OwnerKey>
@@ -110,7 +110,8 @@
     </Reference>
     <Reference Include="DevExpress.ExpressApp.ConditionalAppearance.v13.1">
       <SpecificVersion>False</SpecificVersion>
-    <Private>False</Private></Reference>
+      <Private>False</Private>
+    </Reference>
     <Reference Include="DevExpress.ExpressApp.PivotChart.v13.1">
       <SpecificVersion>False</SpecificVersion>
       <Private>False</Private>
@@ -121,7 +122,8 @@
     </Reference>
     <Reference Include="DevExpress.ExpressApp.Xpo.v13.1">
       <SpecificVersion>False</SpecificVersion>
-    <Private>False</Private></Reference>
+      <Private>False</Private>
+    </Reference>
     <Reference Include="DevExpress.Printing.v13.1.Core">
       <SpecificVersion>False</SpecificVersion>
       <Private>False</Private>
@@ -188,24 +190,34 @@
     </Reference>
     <Reference Include="System">
       <Name>System</Name>
-    <Private>False</Private></Reference>
-    <Reference Include="System.configuration"><Private>False</Private></Reference>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.configuration">
+      <Private>False</Private>
+    </Reference>
     <Reference Include="System.Core">
       <RequiredTargetFramework>3.5</RequiredTargetFramework>
-    <Private>False</Private></Reference>
+      <Private>False</Private>
+    </Reference>
     <Reference Include="System.Data">
       <Name>System.Data</Name>
-    <Private>False</Private></Reference>
+      <Private>False</Private>
+    </Reference>
     <Reference Include="System.Drawing">
       <Name>System.Drawing</Name>
-    <Private>False</Private></Reference>
-    <Reference Include="System.Web"><Private>False</Private></Reference>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Web">
+      <Private>False</Private>
+    </Reference>
     <Reference Include="System.Windows.Forms">
       <Name>System.Windows.Forms</Name>
-    <Private>False</Private></Reference>
+      <Private>False</Private>
+    </Reference>
     <Reference Include="System.Xml">
       <Name>System.XML</Name>
-    <Private>False</Private></Reference>
+      <Private>False</Private>
+    </Reference>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="BusinessObjects\Department.cs" />
@@ -224,6 +236,7 @@
     <Compile Include="Controllers\FindBySubjectController.Designer.cs">
       <DependentUpon>FindBySubjectController.cs</DependentUpon>
     </Compile>
+    <Compile Include="IFluentInterface.cs" />
     <Compile Include="MainDemoModule.cs">
       <SubType>Component</SubType>
     </Compile>
@@ -249,6 +262,7 @@
     <Compile Include="DatabaseUpdate\Updater.cs">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="Queries\Queries.cs" />
     <EmbeddedResource Include="Controllers\FindBySubjectController.resx">
       <DependentUpon>FindBySubjectController.cs</DependentUpon>
       <SubType>Designer</SubType>
@@ -311,9 +325,10 @@
       <Install>true</Install>
     </BootstrapperPackage>
   </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
+  </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <PropertyGroup>
-    
-    
   </PropertyGroup>
 </Project>
