@@ -28,7 +28,7 @@ namespace MainDemo.Module.Controllers {
 			// 
             // FindUsingFluentInterfaceController
 			// 
-			this.FindUsingFluentInterfaceAction.Caption = "Find using fluent interface";
+			this.FindUsingFluentInterfaceAction.Caption = "Test Fluent Interface";
             this.FindUsingFluentInterfaceAction.Category = "View";
 			this.FindUsingFluentInterfaceAction.Id = "FindByFluentInterfaceAction";
 			this.FindUsingFluentInterfaceAction.Execute += new DevExpress.ExpressApp.Actions.SimpleActionExecuteEventHandler(FindByFluentInterfaceAction_Execute);

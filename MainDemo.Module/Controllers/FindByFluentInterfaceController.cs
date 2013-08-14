@@ -17,12 +17,13 @@ namespace MainDemo.Module.Controllers {
                 .Query()
                 .InTransaction
                     .Contacts
-                    .ByPosition("Developer")
-                    .ThatHave
-                        .TasksInProgress()
-                        .TasksWith(Priority.High)
-                        .And
-                        .NoPhoto()
+                        .ByPosition("Developer")
+                            .ThatHave
+                                .NoPhoto()
+                            .And
+                                .TasksInProgress()
+                            .And
+                                .TasksWith(Priority.High)
                 .FirstOrDefault();
 
             if(customer != null) {
