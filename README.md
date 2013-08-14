@@ -2,7 +2,7 @@
 
 [DevExpress XPO](http://www.devexpress.com/Products/NET/ORM/) supports various syntaxes for querying data.
 
-The goal of this project is to provide an example of a fluent interface interface for querying the data in the MainDemo sample. The same method can be adapted for use with any XPO data.
+The goal of this project is to provide an example of a fluent interface interface for querying the data in the MainDemo sample. The same method can be adapted for use with any XPO data. See the [related blog post](http://blog.zerosharp.com/fluent-queries-with-devexpress-xpo-intro).
 
 ### Dependencies ###
 
