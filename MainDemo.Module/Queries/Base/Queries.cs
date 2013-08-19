@@ -36,6 +36,11 @@ namespace MainDemo.Module.Queries
             return Query.GetEnumerator();
         }
 
+        protected IQueryable<T1> CreateSubQuery<T1>()
+        {
+            return new XPQuery<T1>(_Session);
+        }
+
         public T Single()
         {
             return Query.Single();

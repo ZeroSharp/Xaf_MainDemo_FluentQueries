@@ -19,7 +19,7 @@ namespace MainDemo.Module.Controllers {
                     .Contacts
                         .ByPosition("Developer")
                             .ThatHave
-                                .NoPhoto()
+                                .Resume()
                             .And
                                 .TasksInProgress()
                             .And
