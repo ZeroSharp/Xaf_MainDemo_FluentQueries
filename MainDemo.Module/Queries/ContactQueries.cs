@@ -100,7 +100,7 @@ namespace MainDemo.Module.Queries
         public IContactThatHaveQueries Resume()
         {
             //Query = Query.Where(c => _Resumes.Any(r => r.Contact == c));
-            // Unforutnately the above results in 'Specified method is not supported' owing to a limitation of XPO to Linq
+            // Unfortunately the above results in 'Specified method is not supported' owing to a limitation of XPO to Linq
 
             var contactsWithResumes = _Resumes.Select(r => r.Contact).Distinct();
             Query = Query.Where(c => contactsWithResumes.Contains(c));
